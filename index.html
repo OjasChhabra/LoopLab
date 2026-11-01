@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080f19">
+  <title>LoopLab — C++ Practice Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">{"}"}</span><span>loop<span class="accent">lab</span></span></a>
+    <div class="top-meta"><span class="live-dot"></span> BEGINNER C++ TRACK <span class="top-divider">/</span> <span id="progressText">0 / 65 SOLVED</span></div>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> YOUR PRACTICE STARTS HERE</div>
+      <h1>Think in loops.<br><span class="hero-accent">Solve with logic.</span></h1>
+      <p class="hero-copy">Build your C++ fundamentals one problem at a time. No noise. Just practice.</p>
+      <div class="hero-stats">
+        <div><strong id="totalCount">65</strong><span>PROBLEMS</span></div>
+        <div><strong>02</strong><span>CORE TOPICS</span></div>
+        <div><strong id="solvedCount">0</strong><span>COMPLETED</span></div>
+      </div>
+    </section>
+    <section class="workspace">
+      <aside class="sidebar">
+        <div class="side-heading">QUESTION BANK <span class="count-pill" id="visibleCount">65</span></div>
+        <label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search problems..." autocomplete="off"></label>
+        <div class="filter-group">
+          <div class="filter-label">TOPIC</div>
+          <button class="filter-btn active" data-topic="All">All problems <span id="allTopicCount">65</span></button>
+          <button class="filter-btn" data-topic="Conditionals">Conditionals <span>30</span></button>
+          <button class="filter-btn" data-topic="Loops">Loops <span>35</span></button>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">DIFFICULTY</div>
+          <div class="difficulty-filters">
+            <button class="chip active" data-difficulty="All">All</button>
+            <button class="chip" data-difficulty="Beginner">Easy</button>
+            <button class="chip" data-difficulty="Intermediate">Medium</button>
+            <button class="chip" data-difficulty="Challenge">Hard</button>
+          </div>
+        </div>
+        <div class="sidebar-foot"><span class="kbd">C++</span> FUNDAMENTALS <span class="foot-dot">•</span> V1.0</div>
+      </aside>
+      <section class="question-panel">
+        <div class="list-header"><div><div class="section-kicker">PICK YOUR NEXT CHALLENGE</div><h2>Problems <span id="resultLabel">/ All</span></h2></div><div class="sort-label">SORTED BY <b>CURRICULUM</b></div></div>
+        <div id="questionList" class="question-list"></div>
+        <div id="emptyState" class="empty-state hidden">No problems match those filters. Try a different search.</div>
+      </section>
+      <section class="detail-panel" id="detailPanel">
+        <div class="detail-empty"><div class="empty-icon">⌘</div><div class="section-kicker">READY WHEN YOU ARE</div><h3>Select a problem</h3><p>Choose any question from the bank to see its statement, hints, and C++ reference solution.</p><div class="empty-shortcut"><span class="kbd">TIP</span> Start with an easy one and build momentum.</div></div>
+      </section>
+    </section>
+    <footer>BUILT FOR THE LOGIC-DRIVEN <span>·</span> KEEP SHOWING UP.</footer>
+  </main>
+  <script src="questions.js"></script><script src="app.js"></script>
+</body></html>
